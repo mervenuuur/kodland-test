@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.head {
+  width: 100%;
+  margin: auto;
+  height: 1000px;
+  background-image: url(./images/background.png);
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  padding: 40px 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  font-family: 'Rubik Vinyl', cursive;
+  font-size: 40px;
+  font-weight:900
+  padding: 5px 10px ;
+  margin-left:100px;
+  letter-spacing: 5px;
+}
+
+.logo-1 {
+  color:rgba(255, 102, 0, 0.97);
+}
+
+.logo-2 {
+  color:rgba(0, 132, 255, 0.97);
+}
+
+.head nav ul {
+  display: flex;
+  padding: 20px 40px;
+  margin-right: 100px;
+}
+
+.head nav ul li a {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.head nav ul li a:hover {
+  color:rgba(255, 102, 0, 0.97); 
+  
+}
+
+.navbar div {
+  display: none;
+  cursor: pointer;
+}
+
+.head-text {
+ margin: 300px 150px;
+
+}
+ 
+.head-text h1 {
+  font-size: 120px;
+  color: aliceblue;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.head-text p {
+  font-size: large;
+  color: aliceblue;
+  padding: 20px;
+  
+  
+}
+
+.buton {
+  width: 150px;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, aqua, pink, orange);
+  border: none;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 25px;
+  cursor: pointer;
+  color: white;
+  font-size: medium;
+  margin-bottom: 20px;
+  transition:letter-spacing 0.3s;
+
+}
+.buton:hover {
+  background-image: linear-gradient(to left, aqua, pink, orange);
+  letter-spacing: 4px;
+}
+.section-1 {
+  width: 35%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section-1 h1 {
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.section-1 p {
+  color: gray;
+  font-style: italic;
+  text-align: center;
+}
+.section-2 {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: aquamarine;
+  
+}
+
+.section-2 h1 {
+  
+  padding: 30px;
+  color: rgb(224, 162, 30);
+}
+.categories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.categories div img {
+  height: 300px;
+  cursor: pointer;
+  transition: height 0.3s;
+}
+
+.categories div img:hover {
+  height: 350px ;
+}
+
+.categories div button {
+  background-image: linear-gradient(to right, aqua, pink, orange);
+}
+
+
+.categories div button:hover {
+  background-color: blue;
+  
+}
+.category p {
+  padding: 10px;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
+  height: 700px;
+  margin: auto;
+ 
+  background-image: url(./images/bg-grid.png);
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.section-3 div:first-child {
+  width:600px ;
+}
+
+
+.section-3 div h1 {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  word-spacing: 3px;
+  
+}
+
+.section-3 div p {
+  color: rgba(0, 0, 0, 0.548);
+  letter-spacing: 1px;
+  margin-top: 5px;
+  
+}
+
+.section-3 div img {
+  width:437px;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.541);
+}
+.foot {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.foot li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 790px) {
+  .head {
+    height: auto;
+  }
+
+  .foot {
+    width: 90%;
+  }
+  .foot li a  {
+    font-size: small;
+  }
+}
+ 
+ @media screen and (max-width: 976px) {
+ 
+  .navbar div {
+    display: block;
+  }
+
+  .head nav ul {
+    display: none;
+
+  }
+  .head-text h1 {
+  font-size: 30px;
+   }
+
+  .head-text {
+   margin: 100px 50px;
+
+  }
+  .head-text p {
+    font-size: medium;
+  }
+ 
+  .categories {
+  flex-direction: column;
+  }
+
+.category {
+ border-bottom: 2px solid white ;
+ padding-top: 10px;
+}
+.section-3 div h1 {
+    font-size: large;
+}
+.section-3 div p {
+    width: 80%;
+    font-size: small;
+}
+
+.section-3 div img {
+  width: 300px;
+  padding-bottom: 60px;
+}
+}
+
+
+ @media screen and (max-width: 1557px) {
+  .head {
+    background-size: contain;
+    background-position: top;
+  
+  }
+
+  .head-text h1 {
+  font-size: 60px;
+   }
+
+.head-text {
+ margin: 100px 50px;
+
+}
+ }
